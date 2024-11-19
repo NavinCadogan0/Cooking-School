@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         h1 {
             font-family: 'Britannic';
@@ -9,12 +10,23 @@
             text-decoration: underline;
         }
         body {
-            animation: gradient-animation 3s infinite;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        @keyframes gradient-animation {
-            0% { background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%); }
-            50% { background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%); }
-            100% { background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%); }
+        ul {
+            padding-left: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 0 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            ul {
+                padding-left: 15px;
+            }
         }
     </style>
 </head>
