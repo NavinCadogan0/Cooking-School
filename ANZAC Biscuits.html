@@ -1,109 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        h1 {
+            font-family: 'Britannic';
+        }
+        a {
+            text-decoration: underline;
+        }
         body {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            font-family: Arial, sans-serif;
+            animation: gradient-animation 3s infinite;
         }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-        }
-
-        .home-button {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 18px;
-            text-decoration: none;
-            color: white;
-            border-radius: 5px;
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
-            background-size: 300% 300%;
-            animation: gradient 5s ease infinite;
-        }
-
-        .home-button::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
-            animation: glow 3s linear infinite;
-        }
-
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        @keyframes glow {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        .recipe {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        @media screen and (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            
-            .home-button {
-                padding: 10px 20px;
-                font-size: 16px;
-            }
+        @keyframes gradient-animation {
+            0% { background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%); }
+            50% { background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%); }
+            100% { background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%); }
         }
     </style>
 </head>
 <body>
-    <a href="https://navincadogan0.github.io/Cooking-School/Cooking%20School.html" class="home-button">Back to Main Page</a>
-    
-    <h1>ANZAC Biscuits</h1>
-    
-    <img src="https://navincadogan0.github.io/Cooking-School/ANZACBiscuits.png" alt="ANZAC Biscuits">
-    
-    <div class="recipe">
-        <h2>Ingredients:</h2>
-        <ul>
-            <li>1 cup plain flour</li>
-            <li>1 cup rolled oats</li>
-            <li>1 cup desiccated coconut</li>
-            <li>1 cup brown sugar</li>
-            <li>125g butter</li>
-            <li>2 tablespoons golden syrup</li>
-            <li>1 teaspoon bicarbonate of soda</li>
-            <li>2 tablespoons boiling water</li>
-        </ul>
-
-        <h2>Method:</h2>
-        <ol>
-            <li>Preheat oven to 180°C. Line baking trays with baking paper.</li>
-            <li>Combine flour, oats, coconut and brown sugar in a large bowl.</li>
-            <li>Melt butter and golden syrup in a small saucepan over low heat.</li>
-            <li>Mix bicarbonate of soda with boiling water in a small bowl, then add to butter mixture.</li>
-            <li>Pour butter mixture into dry ingredients and mix well.</li>
-            <li>Roll level tablespoons of mixture into balls and place on trays, allowing room for spreading.</li>
-            <li>Press down slightly with a fork.</li>
-            <li>Bake for 12-15 minutes or until golden brown.</li>
-            <li>Allow to cool on trays for 5 minutes before transferring to wire racks.</li>
-        </ol>
-    </div>
+    <h1>HTML Cooking School</h1>
+    <p>Recipes</p>
+    <p>Since this is an... bla bla bla</p>
+    <ul>
+        <li>Cake
+            <ul>
+                <li><a href="plain-sponge.html">.Plain Sponge</a></li>
+                <li><a href="chocolate-cake.html">.Chocolate Cake</a></li>
+                <li><a href="apple-tea-cake.html">.Apple Tea Cake</a></li>
+            </ul>
+        </li>
+        <li>Biscuits
+            <ul>
+                <li><a href="https://navincadogan0.github.io/Cooking-School/ANZAC%20Biscuits.html">.ANZAC Biscuits</a></li>
+                <li><a href="jam-drops.html">.Jam Drops</a></li>
+                <li><a href="melting-moments.html">.Melting Moments</a></li>
+            </ul>
+        </li>
+        <li>Breads/quickbreads
+            <ul>
+                <li><a href="damper.html">.Damper</a></li>
+                <li><a href="scones.html">.Scones</a></li>
+            </ul>
+        </li>
+    </ul>
 </body>
 </html>
