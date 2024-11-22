@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .home-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+            background-size: 300% 300%;
+            animation: gradient 5s ease infinite;
+        }
+
+        .home-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+            animation: glow 3s linear infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes glow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .recipe {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .home-button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="https://navincadogan0.github.io/Cooking-School/Cooking%20School.html" class="home-button">Back to Main Page</a>
+    
+    <h1>Melting Moments Biscuits</h1>
+    
+    <img src="https://navincadogan0.github.io/Cooking-School/MeltingMoments.png" alt="Melting Moments Biscuits">
+    
+    
+            <div class="recipe">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>180g butter, softened</li>
+            <li>1/3 cup icing sugar</li>
+            <li>1 teaspoon vanilla extract</li>
+            <li>1 cup plain flour</li>
+            <li>1/3 cup cornflour</li>
+            
+            <h3>Buttercream Filling:</h3>
+            <li>60g butter, softened</li>
+            <li>2/3 cup icing sugar</li>
+            <li>1/2 teaspoon vanilla extract</li>
+        </ul>
+
+        <h2>Method:</h2>
+        <ol>
+            <li>Preheat oven to 160°C. Line baking trays with baking paper.</li>
+            <li>Beat butter, icing sugar and vanilla until light and fluffy.</li>
+            <li>Sift flour and cornflour together, then gradually stir into butter mixture.</li>
+            <li>Roll teaspoons of mixture into small balls.</li>
+            <li>Place on prepared trays and flatten slightly with a fork.</li>
+            <li>Bake for 15-18 minutes or until light golden.</li>
+            <li>Cool completely on wire racks.</li>
+            <li>For filling, beat butter until creamy. Gradually beat in icing sugar and vanilla.</li>
+            <li>Join pairs of biscuits with buttercream filling.</li>
+        </ol>
+
+    </div>
+</body>
+</html>
