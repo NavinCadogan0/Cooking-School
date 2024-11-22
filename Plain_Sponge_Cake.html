@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .home-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+            background-size: 300% 300%;
+            animation: gradient 5s ease infinite;
+        }
+
+        .home-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+            animation: glow 3s linear infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes glow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .recipe {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .home-button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="https://navincadogan0.github.io/Cooking-School/Cooking%20School.html" class="home-button">Back to Main Page</a>
+    
+    <h1>Plain Sponge Cake</h1>
+    
+    <img src="https://navincadogan0.github.io/Cooking-School/plain%20cake.png" alt="Plain Sponge Cake">
+    
+    
+            <div class="recipe">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>4 large eggs, at room temperature</li>
+            <li>3/4 cup caster sugar</li>
+            <li>1 teaspoon vanilla extract</li>
+            <li>3/4 cup plain flour</li>
+            <li>1/4 cup cornflour</li>
+            <li>1 teaspoon baking powder</li>
+            <li>1/4 teaspoon salt</li>
+            <li>60g butter, melted and cooled</li>
+        </ul>
+
+        <h2>Method:</h2>
+        <ol>
+            <li>Preheat oven to 180°C. Grease and line two 20cm round cake pans with baking paper.</li>
+            <li>Using an electric mixer, beat eggs, sugar and vanilla on high speed for 8-10 minutes until thick, pale and tripled in volume.</li>
+            <li>Sift flour, cornflour, baking powder and salt together three times.</li>
+            <li>Gently fold dry ingredients into egg mixture in three batches, using a large metal spoon.</li>
+            <li>Pour melted butter down the side of the bowl and gently fold through until just combined.</li>
+            <li>Divide mixture evenly between prepared pans.</li>
+            <li>Bake for 20-25 minutes or until cakes spring back when lightly touched.</li>
+            <li>Allow to cool in pans for 5 minutes.</li>
+            <li>Turn onto wire racks lined with baking paper to cool completely.</li>
+            <li>Once cooled, sandwich layers together with whipped cream and dust top with icing sugar if desired.</li>
+        </ol>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .home-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+            background-size: 300% 300%;
+            animation: gradient 5s ease infinite;
+        }
+
+        .home-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+            animation: glow 3s linear infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes glow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .recipe {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .home-button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="https://navincadogan0.github.io/Cooking-School/Cooking%20School.html" class="home-button">Back to Main Page</a>
+    
+    <h1>Chocolate Cake</h1>
+    
+    <img src="https://navincadogan0.github.io/Cooking-School/Chocolatecake.png" alt="Chocolate Cake">
+    
+    
+            <div class="recipe">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>2 cups all-purpose flour</li>
+            <li>2 cups granulated sugar</li>
+            <li>3/4 cup unsweetened cocoa powder</li>
+            <li>2 teaspoons baking soda</li>
+            <li>1 teaspoon baking powder</li>
+            <li>1 teaspoon salt</li>
+            <li>2 eggs</li>
+            <li>1 cup milk</li>
+            <li>1/2 cup vegetable oil</li>
+            <li>2 teaspoons vanilla extract</li>
+            <li>1 cup hot water</li>
+        </ul>
+
+        <h2>Method:</h2>
+        <ol>
+            <li>Preheat oven to 180°C. Grease and flour two 23cm round cake pans.</li>
+            <li>In a large bowl, combine flour, sugar, cocoa, baking soda, baking powder, and salt.</li>
+            <li>Add eggs, milk, oil, and vanilla to the dry ingredients.</li>
+            <li>Mix with an electric mixer on medium speed for about 2 minutes.</li>
+            <li>Stir in hot water. The batter will be very thin.</li>
+            <li>Pour batter evenly into prepared pans.</li>
+            <li>Bake for 30-35 minutes, until a toothpick inserted in center comes out clean.</li>
+            <li>Cool in pans for 10 minutes.</li>
+            <li>Remove from pans and cool completely on wire racks.</li>
+            <li>Once cooled, frost with your favorite chocolate frosting.</li>
+        </ol>
+
+    </div>
+</body>
+</html>
